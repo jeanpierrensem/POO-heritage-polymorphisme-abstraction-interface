@@ -41,11 +41,13 @@ public class Livre implements Empruntable {
 
     @Override
     public void emprunter() {
+        isBorrowed = true;
         System.out.println("Emprunter un LIVRE");
     }
 
     @Override
     public void retourner() {
+        isBorrowed = false;
         System.out.println("Retourner un LIVRE");
     }
 

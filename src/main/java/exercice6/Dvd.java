@@ -40,11 +40,13 @@ public class Dvd implements  Empruntable {
 
     @Override
     public void emprunter() {
+        isBorrowed = true;
         System.out.println("Emprunter un DVD");
     }
 
     @Override
     public void retourner() {
+        isBorrowed = false;
         System.out.println("Retourner un DVD");
 
     }
